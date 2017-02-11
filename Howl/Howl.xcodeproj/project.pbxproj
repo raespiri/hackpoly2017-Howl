@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636921E4FBCDD007FC263 /* AppDelegate.swift */; };
+		BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636941E4FBCDD007FC263 /* ViewController.swift */; };
+		BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4636961E4FBCDD007FC263 /* Main.storyboard */; };
+		BA46369A1E4FBCDD007FC263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4636991E4FBCDD007FC263 /* Assets.xcassets */; };
+		BA46369D1E4FBCDD007FC263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA46369B1E4FBCDD007FC263 /* LaunchScreen.storyboard */; };
+		BA4636A81E4FBCDD007FC263 /* HowlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636A71E4FBCDD007FC263 /* HowlTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA4636A41E4FBCDD007FC263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA4636871E4FBCDD007FC263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA46368E1E4FBCDD007FC263;
+			remoteInfo = Howl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA46368F1E4FBCDD007FC263 /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4636921E4FBCDD007FC263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA4636941E4FBCDD007FC263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA4636971E4FBCDD007FC263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA4636991E4FBCDD007FC263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA46369C1E4FBCDD007FC263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA46369E1E4FBCDD007FC263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4636A31E4FBCDD007FC263 /* HowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4636A71E4FBCDD007FC263 /* HowlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowlTests.swift; sourceTree = "<group>"; };
+		BA4636A91E4FBCDD007FC263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA46368C1E4FBCDD007FC263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4636A01E4FBCDD007FC263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA4636861E4FBCDD007FC263 = {
+			isa = PBXGroup;
+			children = (
+				BA4636911E4FBCDD007FC263 /* Howl */,
+				BA4636A61E4FBCDD007FC263 /* HowlTests */,
+				BA4636901E4FBCDD007FC263 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA4636901E4FBCDD007FC263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA46368F1E4FBCDD007FC263 /* Howl.app */,
+				BA4636A31E4FBCDD007FC263 /* HowlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA4636911E4FBCDD007FC263 /* Howl */ = {
+			isa = PBXGroup;
+			children = (
+				BA4636921E4FBCDD007FC263 /* AppDelegate.swift */,
+				BA4636941E4FBCDD007FC263 /* ViewController.swift */,
+				BA4636961E4FBCDD007FC263 /* Main.storyboard */,
+				BA4636991E4FBCDD007FC263 /* Assets.xcassets */,
+				BA46369B1E4FBCDD007FC263 /* LaunchScreen.storyboard */,
+				BA46369E1E4FBCDD007FC263 /* Info.plist */,
+			);
+			path = Howl;
+			sourceTree = "<group>";
+		};
+		BA4636A61E4FBCDD007FC263 /* HowlTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA4636A71E4FBCDD007FC263 /* HowlTests.swift */,
+				BA4636A91E4FBCDD007FC263 /* Info.plist */,
+			);
+			path = HowlTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA46368E1E4FBCDD007FC263 /* Howl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4636AC1E4FBCDD007FC263 /* Build configuration list for PBXNativeTarget "Howl" */;
+			buildPhases = (
+				BA46368B1E4FBCDD007FC263 /* Sources */,
+				BA46368C1E4FBCDD007FC263 /* Frameworks */,
+				BA46368D1E4FBCDD007FC263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Howl;
+			productName = Howl;
+			productReference = BA46368F1E4FBCDD007FC263 /* Howl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA4636A21E4FBCDD007FC263 /* HowlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4636AF1E4FBCDD007FC263 /* Build configuration list for PBXNativeTarget "HowlTests" */;
+			buildPhases = (
+				BA46369F1E4FBCDD007FC263 /* Sources */,
+				BA4636A01E4FBCDD007FC263 /* Frameworks */,
+				BA4636A11E4FBCDD007FC263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA4636A51E4FBCDD007FC263 /* PBXTargetDependency */,
+			);
+			name = HowlTests;
+			productName = HowlTests;
+			productReference = BA4636A31E4FBCDD007FC263 /* HowlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA4636871E4FBCDD007FC263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jonashen;
+				TargetAttributes = {
+					BA46368E1E4FBCDD007FC263 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BA4636A21E4FBCDD007FC263 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BA46368E1E4FBCDD007FC263;
+					};
+				};
+			};
+			buildConfigurationList = BA46368A1E4FBCDD007FC263 /* Build configuration list for PBXProject "Howl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA4636861E4FBCDD007FC263;
+			productRefGroup = BA4636901E4FBCDD007FC263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA46368E1E4FBCDD007FC263 /* Howl */,
+				BA4636A21E4FBCDD007FC263 /* HowlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA46368D1E4FBCDD007FC263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA46369D1E4FBCDD007FC263 /* LaunchScreen.storyboard in Resources */,
+				BA46369A1E4FBCDD007FC263 /* Assets.xcassets in Resources */,
+				BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4636A11E4FBCDD007FC263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA46368B1E4FBCDD007FC263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */,
+				BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA46369F1E4FBCDD007FC263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4636A81E4FBCDD007FC263 /* HowlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA4636A51E4FBCDD007FC263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA46368E1E4FBCDD007FC263 /* Howl */;
+			targetProxy = BA4636A41E4FBCDD007FC263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA4636961E4FBCDD007FC263 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA4636971E4FBCDD007FC263 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA46369B1E4FBCDD007FC263 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA46369C1E4FBCDD007FC263 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA4636AA1E4FBCDD007FC263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA4636AB1E4FBCDD007FC263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA4636AD1E4FBCDD007FC263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Howl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jonashen.Howl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA4636AE1E4FBCDD007FC263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Howl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jonashen.Howl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA4636B01E4FBCDD007FC263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HowlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jonashen.HowlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howl.app/Howl";
+			};
+			name = Debug;
+		};
+		BA4636B11E4FBCDD007FC263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HowlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jonashen.HowlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howl.app/Howl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA46368A1E4FBCDD007FC263 /* Build configuration list for PBXProject "Howl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4636AA1E4FBCDD007FC263 /* Debug */,
+				BA4636AB1E4FBCDD007FC263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA4636AC1E4FBCDD007FC263 /* Build configuration list for PBXNativeTarget "Howl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4636AD1E4FBCDD007FC263 /* Debug */,
+				BA4636AE1E4FBCDD007FC263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA4636AF1E4FBCDD007FC263 /* Build configuration list for PBXNativeTarget "HowlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4636B01E4FBCDD007FC263 /* Debug */,
+				BA4636B11E4FBCDD007FC263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA4636871E4FBCDD007FC263 /* Project object */;
+}
