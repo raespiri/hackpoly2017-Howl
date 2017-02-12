@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var border: UIButton!
+    @IBOutlet weak var textField: UITextView!
     var flag = false
     
     override func viewDidLoad() {
@@ -68,5 +69,9 @@ class ViewController: UIViewController {
 //        }, completion: nil)
 //    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let DestViewController : ViewController2 = (segue.destination as? ViewController2)!
+        DestViewController.parsedString = textField.text
+    }
 }
 
