@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0283E4851E5000DD00995262 /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = 0283E4841E5000DD00995262 /* wolf.png */; };
+		0283E4871E50012400995262 /* redborder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0283E4861E50012400995262 /* redborder.png */; };
+		0283E4891E502B3500995262 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283E4881E502B3500995262 /* NSTimerExtension.swift */; };
 		BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636921E4FBCDD007FC263 /* AppDelegate.swift */; };
 		BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636941E4FBCDD007FC263 /* ViewController.swift */; };
 		BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4636961E4FBCDD007FC263 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0283E4841E5000DD00995262 /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wolf.png; path = ../../../../../wolf.png; sourceTree = "<group>"; };
+		0283E4861E50012400995262 /* redborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redborder.png; path = ../../../../../redborder.png; sourceTree = "<group>"; };
+		0283E4881E502B3500995262 /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
 		BA46368F1E4FBCDD007FC263 /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4636921E4FBCDD007FC263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA4636941E4FBCDD007FC263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +86,12 @@
 				BA4636921E4FBCDD007FC263 /* AppDelegate.swift */,
 				BA4636941E4FBCDD007FC263 /* ViewController.swift */,
 				BA4636961E4FBCDD007FC263 /* Main.storyboard */,
+				0283E4861E50012400995262 /* redborder.png */,
 				BA4636991E4FBCDD007FC263 /* Assets.xcassets */,
+				0283E4841E5000DD00995262 /* wolf.png */,
 				BA46369B1E4FBCDD007FC263 /* LaunchScreen.storyboard */,
 				BA46369E1E4FBCDD007FC263 /* Info.plist */,
+				0283E4881E502B3500995262 /* NSTimerExtension.swift */,
 			);
 			path = Howl;
 			sourceTree = "<group>";
@@ -182,6 +191,8 @@
 				BA46369D1E4FBCDD007FC263 /* LaunchScreen.storyboard in Resources */,
 				BA46369A1E4FBCDD007FC263 /* Assets.xcassets in Resources */,
 				BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */,
+				0283E4871E50012400995262 /* redborder.png in Resources */,
+				0283E4851E5000DD00995262 /* wolf.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */,
+				0283E4891E502B3500995262 /* NSTimerExtension.swift in Sources */,
 				BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
