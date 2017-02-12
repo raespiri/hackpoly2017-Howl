@@ -22,29 +22,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vPq-0g-TOD">
-                                <rect key="frame" x="-37" y="-40" width="446" height="723"/>
+                                <rect key="frame" x="-40" y="-42" width="446" height="723"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wolf.png" translatesAutoresizingMaskIntoConstraints="NO" id="CWS-pY-CHa">
-                                <rect key="frame" x="86" y="242" width="217" height="154"/>
+                                <rect key="frame" x="79" y="81" width="217" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blw-YV-KQB">
-                                <rect key="frame" x="69" y="199" width="251" height="268"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-05-n9Y">
+                                <rect key="frame" x="62" y="40" width="251" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="redborder.png"/>
                                 <connections>
-                                    <action selector="rotate360:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVc-Jw-p0t"/>
+                                    <action selector="rotate360:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXn-ET-ShH"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3t-0p-ZzW" userLabel="recordButton" customClass="CircleButton" customModule="Howl" customModuleProvider="target">
+                                <rect key="frame" x="133" y="443" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.039765733839812967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="RR7-9m-OG4"/>
+                                    <constraint firstAttribute="height" constant="250" id="mXd-83-e7H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <state key="normal" title="HOWL">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="border" destination="blw-YV-KQB" id="t0j-DU-eQG"/>
                         <outlet property="image" destination="CWS-pY-CHa" id="oWF-Ag-7qT"/>
                     </connections>
                 </viewController>

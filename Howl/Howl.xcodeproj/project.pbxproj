@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0283E4851E5000DD00995262 /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = 0283E4841E5000DD00995262 /* wolf.png */; };
-		0283E4871E50012400995262 /* redborder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0283E4861E50012400995262 /* redborder.png */; };
 		0283E4891E502B3500995262 /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283E4881E502B3500995262 /* NSTimerExtension.swift */; };
+		BA3AAC561E502E30007C43FD /* redborder.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC541E502E30007C43FD /* redborder.png */; };
+		BA3AAC571E502E30007C43FD /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC551E502E30007C43FD /* wolf.png */; };
+		BA3AAC5A1E502E63007C43FD /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AAC591E502E63007C43FD /* CircleButton.swift */; };
 		BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636921E4FBCDD007FC263 /* AppDelegate.swift */; };
 		BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636941E4FBCDD007FC263 /* ViewController.swift */; };
 		BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4636961E4FBCDD007FC263 /* Main.storyboard */; };
@@ -29,9 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0283E4841E5000DD00995262 /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wolf.png; path = ../../../../../wolf.png; sourceTree = "<group>"; };
-		0283E4861E50012400995262 /* redborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redborder.png; path = ../../../../../redborder.png; sourceTree = "<group>"; };
 		0283E4881E502B3500995262 /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
+		BA3AAC541E502E30007C43FD /* redborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redborder.png; sourceTree = "<group>"; };
+		BA3AAC551E502E30007C43FD /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wolf.png; sourceTree = "<group>"; };
+		BA3AAC591E502E63007C43FD /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		BA46368F1E4FBCDD007FC263 /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4636921E4FBCDD007FC263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA4636941E4FBCDD007FC263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA3AAC511E502DE5007C43FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA3AAC541E502E30007C43FD /* redborder.png */,
+				BA3AAC551E502E30007C43FD /* wolf.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BA3AAC521E502DE9007C43FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BA3AAC531E502DEC007C43FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA3AAC591E502E63007C43FD /* CircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BA3AAC581E502E4C007C43FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA4636941E4FBCDD007FC263 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		BA4636861E4FBCDD007FC263 = {
 			isa = PBXGroup;
 			children = (
@@ -83,12 +117,13 @@
 		BA4636911E4FBCDD007FC263 /* Howl */ = {
 			isa = PBXGroup;
 			children = (
+				BA3AAC511E502DE5007C43FD /* Resources */,
+				BA3AAC521E502DE9007C43FD /* Model */,
+				BA3AAC531E502DEC007C43FD /* View */,
+				BA3AAC581E502E4C007C43FD /* Controller */,
 				BA4636921E4FBCDD007FC263 /* AppDelegate.swift */,
-				BA4636941E4FBCDD007FC263 /* ViewController.swift */,
 				BA4636961E4FBCDD007FC263 /* Main.storyboard */,
-				0283E4861E50012400995262 /* redborder.png */,
 				BA4636991E4FBCDD007FC263 /* Assets.xcassets */,
-				0283E4841E5000DD00995262 /* wolf.png */,
 				BA46369B1E4FBCDD007FC263 /* LaunchScreen.storyboard */,
 				BA46369E1E4FBCDD007FC263 /* Info.plist */,
 				0283E4881E502B3500995262 /* NSTimerExtension.swift */,
@@ -189,10 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA46369D1E4FBCDD007FC263 /* LaunchScreen.storyboard in Resources */,
+				BA3AAC571E502E30007C43FD /* wolf.png in Resources */,
+				BA3AAC561E502E30007C43FD /* redborder.png in Resources */,
 				BA46369A1E4FBCDD007FC263 /* Assets.xcassets in Resources */,
 				BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */,
-				0283E4871E50012400995262 /* redborder.png in Resources */,
-				0283E4851E5000DD00995262 /* wolf.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +248,7 @@
 				BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */,
 				0283E4891E502B3500995262 /* NSTimerExtension.swift in Sources */,
 				BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */,
+				BA3AAC5A1E502E63007C43FD /* CircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
