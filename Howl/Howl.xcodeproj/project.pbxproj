@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02B063DD1E5044C600A75B9A /* informationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B063DC1E5044C600A75B9A /* informationController.swift */; };
+		02B063E31E50462C00A75B9A /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B063E21E50462C00A75B9A /* information.png */; };
 		BA3AAC561E502E30007C43FD /* redborder.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC541E502E30007C43FD /* redborder.png */; };
 		BA3AAC571E502E30007C43FD /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC551E502E30007C43FD /* wolf.png */; };
 		BA3AAC5A1E502E63007C43FD /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AAC591E502E63007C43FD /* CircleButton.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02B063DC1E5044C600A75B9A /* informationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = informationController.swift; sourceTree = "<group>"; };
+		02B063E21E50462C00A75B9A /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
 		BA3AAC541E502E30007C43FD /* redborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redborder.png; sourceTree = "<group>"; };
 		BA3AAC551E502E30007C43FD /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wolf.png; sourceTree = "<group>"; };
 		BA3AAC591E502E63007C43FD /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 			children = (
 				BA3AAC5F1E5034AB007C43FD /* microphone_318-50712.png */,
 				BA3AAC5D1E5033F4007C43FD /* microphone.png */,
+				02B063E21E50462C00A75B9A /* information.png */,
 				BA3AAC541E502E30007C43FD /* redborder.png */,
 				BA3AAC551E502E30007C43FD /* wolf.png */,
 			);
@@ -99,6 +104,7 @@
 			children = (
 				BA4636941E4FBCDD007FC263 /* ViewController.swift */,
 				BA3AAC611E5037A8007C43FD /* ViewController2.swift */,
+				02B063DC1E5044C600A75B9A /* informationController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				BA46369D1E4FBCDD007FC263 /* LaunchScreen.storyboard in Resources */,
 				BA3AAC571E502E30007C43FD /* wolf.png in Resources */,
 				BA3AAC5E1E5033F4007C43FD /* microphone.png in Resources */,
+				02B063E31E50462C00A75B9A /* information.png in Resources */,
 				BA3AAC601E5034AB007C43FD /* microphone_318-50712.png in Resources */,
 				BA3AAC561E502E30007C43FD /* redborder.png in Resources */,
 				BA46369A1E4FBCDD007FC263 /* Assets.xcassets in Resources */,
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B063DD1E5044C600A75B9A /* informationController.swift in Sources */,
 				BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */,
 				BA3AAC621E5037A8007C43FD /* ViewController2.swift in Sources */,
 				BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */,

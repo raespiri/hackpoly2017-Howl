@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,17 +53,22 @@
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="This is a test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WvE-Kb-raj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" text="This is a test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WvE-Kb-raj">
                                 <rect key="frame" x="12" y="394" width="343" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="ZI3-px-Dtj"/>
-                                    <constraint firstAttribute="width" constant="343" id="ZR7-YS-w53"/>
-                                </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCA-1Y-RjA">
+                                <rect key="frame" x="298" y="604" width="61" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="information.png"/>
+                                <connections>
+                                    <segue destination="BT7-Yi-hW5" kind="presentation" id="r6l-Ro-5ip"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -88,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Congratulations, your text is on this side now." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-Ys-jhT">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" text="Congratulations, your text is on this side now." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-Ys-jhT">
                                 <rect key="frame" x="16" y="39" width="343" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -99,7 +105,7 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="This is a test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-N4-Axw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" text="This is a test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-N4-Axw">
                                 <rect key="frame" x="16" y="136" width="343" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -112,14 +118,68 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zt8-Ys-jhT" firstAttribute="top" secondItem="tWs-1r-0Hh" secondAttribute="bottom" constant="19" id="MD0-7S-AlM"/>
+                            <constraint firstItem="uxm-N4-Axw" firstAttribute="leading" secondItem="058-jG-RCC" secondAttribute="leadingMargin" id="c35-a7-eO1"/>
+                            <constraint firstItem="uxm-N4-Axw" firstAttribute="leading" secondItem="zt8-Ys-jhT" secondAttribute="leading" id="dSD-Vw-imh"/>
+                            <constraint firstItem="uxm-N4-Axw" firstAttribute="top" secondItem="tWs-1r-0Hh" secondAttribute="bottom" constant="116" id="xjr-Ks-eJZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="day-D8-Mp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="-1"/>
+            <point key="canvasLocation" x="1164" y="-340"/>
+        </scene>
+        <!--Information Controller-->
+        <scene sceneID="SM0-UR-SNg">
+            <objects>
+                <viewController id="BT7-Yi-hW5" customClass="informationController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wep-WK-YSO"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Oj-LP-iTY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iT8-PZ-Prg" customClass="information">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0GU-VV-NNv">
+                                <rect key="frame" x="67" y="146" width="240" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Instruction: Press the microphone and then ask your math related question. Howl is capable of doing derivative, integrals, cross product, dot product, multi integrals, summation, limits, matrice determinants. Howl is still in beta phase, answers may not be fully accurate</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TJH-Il-fF5">
+                                <rect key="frame" x="67" y="564" width="240" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Created by Jonathon Shen, Toshitaka Shuzawa, Leo Gould, Ryan Espiritu
+Copyright © 2017 Howl. All rights reserved.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-gW-gBI">
+                                <rect key="frame" x="169" y="450" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="dismissing:" destination="BT7-Yi-hW5" eventType="touchUpInside" id="mYu-E1-uBu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1A-eV-OMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="315"/>
         </scene>
     </scenes>
     <resources>
+        <image name="information.png" width="512" height="512"/>
         <image name="microphone.png" width="400" height="400"/>
         <image name="redborder.png" width="1500" height="1600"/>
         <image name="wolf.png" width="1600" height="1200"/>
