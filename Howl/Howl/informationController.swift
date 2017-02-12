@@ -11,11 +11,13 @@ import UIKit
 class informationController: UIViewController {
 
     @IBOutlet weak var descriptionText: UITextView!
+    @IBOutlet weak var copyrightText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         descriptionText.isEditable = false
+        copyrightText.isEditable = false
     }
 
     override func didReceiveMemoryWarning() {

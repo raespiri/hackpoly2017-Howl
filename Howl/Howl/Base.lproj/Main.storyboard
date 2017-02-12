@@ -90,6 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="activitySpinner" destination="b1l-9e-qcy" id="YwM-rl-fNp"/>
+                        <outlet property="descriptionText" destination="jgc-kQ-dgS" id="g2f-i7-XN9"/>
                         <outlet property="howlTitle" destination="Aup-GL-vty" id="oM4-DU-JWV"/>
                         <outlet property="infoButton" destination="cCA-1Y-RjA" id="YaB-0L-zPh"/>
                         <outlet property="recordButton" destination="8aX-oO-Lkg" id="bK4-3h-ayR"/>
@@ -199,6 +200,7 @@ Copyright © 2017 Howl. All rights reserved.</string>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="copyrightText" destination="TJH-Il-fF5" id="nDv-Oq-ceX"/>
                         <outlet property="descriptionText" destination="DMO-bW-VUh" id="kJe-cM-xjy"/>
                     </connections>
                 </viewController>

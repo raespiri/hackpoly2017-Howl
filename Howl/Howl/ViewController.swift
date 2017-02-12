@@ -71,8 +71,6 @@ class ViewController: UIViewController {
         speechToTextDisplay.isHidden = true
         howlTitle.isEditable = false
         howlTitle.isSelectable = false
-        infoButton.setTitle("info_button", for: [])
-        recordButton.setTitle("record_button", for: [])
         recordButton.tag = 1
         activitySpinner.isHidden = true
         descriptionText.isSelectable = false
