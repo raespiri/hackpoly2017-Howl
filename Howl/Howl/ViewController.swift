@@ -76,9 +76,13 @@ class ViewController: UIViewController {
             recordButton.setTitle("HOWL", for: .normal)
             // Segue-way into the next screen
             self.performSegue(withIdentifier: "stopRecording", sender: self)
+            recordButton.setImage(UIImage(named: "microphone_yellow.png"), for: UIControlState.normal)
+            recordButton.updateConstraints()
         } else {
             startRecording()
             recordButton.setTitle("Stop", for: .normal)
+            recordButton.setImage(UIImage(named: "microphone_black.png"), for: UIControlState.normal)
+            speechToTextDisplay.text = ""
         }
     }
     

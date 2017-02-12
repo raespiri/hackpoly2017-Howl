@@ -40,7 +40,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aX-oO-Lkg">
                                 <rect key="frame" x="168" y="586" width="87" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="microphone.png"/>
+                                <state key="normal" title="Button" image="microphone_yellow.png"/>
                                 <connections>
                                     <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yN3-9a-lNT"/>
                                 </connections>
@@ -55,7 +55,7 @@
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" text="This is a test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WvE-Kb-raj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" text="Ask and you shall receive." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WvE-Kb-raj">
                                 <rect key="frame" x="36" y="449" width="343" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -187,7 +187,7 @@ Copyright © 2017 Howl. All rights reserved.</string>
     </scenes>
     <resources>
         <image name="information.png" width="512" height="512"/>
-        <image name="microphone.png" width="400" height="400"/>
+        <image name="microphone_yellow.png" width="400" height="400"/>
         <image name="redborder.png" width="1500" height="1600"/>
         <image name="wolf.png" width="1600" height="1200"/>
     </resources>
