@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var wolfImage: UIImageView!
     @IBOutlet weak var howlTitle: UITextView!
     @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var descriptionText: UITextView!
     
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest? // provides an audio input to speech recognizer
     private var recognitionTask: SFSpeechRecognitionTask? // gives result of the request made
@@ -74,6 +75,8 @@ class ViewController: UIViewController {
         recordButton.setTitle("record_button", for: [])
         recordButton.tag = 1
         activitySpinner.isHidden = true
+        descriptionText.isSelectable = false
+        descriptionText.isEditable = false
     }
     
     @IBAction func recordButtonPressed(_ sender: Any) {
