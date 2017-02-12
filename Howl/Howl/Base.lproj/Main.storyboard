@@ -52,7 +52,7 @@
                                     <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yN3-9a-lNT"/>
                                 </connections>
                             </button>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="H O W L " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Aup-GL-vty">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="H O W L " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Aup-GL-vty">
                                 <rect key="frame" x="119" y="334" width="201" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -62,7 +62,7 @@
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ask and you shall receive." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jgc-kQ-dgS">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="Ask and you shall receive." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jgc-kQ-dgS">
                                 <rect key="frame" x="62" y="475" width="317" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -177,7 +177,7 @@ Copyright © 2017 Howl. All rights reserved.</string>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DMO-bW-VUh">
                                         <rect key="frame" x="70" y="371" width="273" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Instructions: Press the microphone and ask your  question to the great Wolf.   ---  Howl is still in its beta phase, but one day hopes to be the Alpha.</string>
+                                        <string key="text">Instructions: Press the microphone and ask your question to the great Wolf.   ---  Howl is still in its beta phase, but one day hopes to be the Alpha.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
