@@ -10,10 +10,12 @@ import UIKit
 
 class informationController: UIViewController {
 
+    @IBOutlet weak var descriptionText: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        descriptionText.isEditable = false
     }
 
     override func didReceiveMemoryWarning() {

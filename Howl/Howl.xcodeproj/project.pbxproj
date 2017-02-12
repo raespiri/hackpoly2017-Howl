@@ -22,6 +22,7 @@
 		BA46369A1E4FBCDD007FC263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4636991E4FBCDD007FC263 /* Assets.xcassets */; };
 		BA46369D1E4FBCDD007FC263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA46369B1E4FBCDD007FC263 /* LaunchScreen.storyboard */; };
 		BA4636A81E4FBCDD007FC263 /* HowlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636A71E4FBCDD007FC263 /* HowlTests.swift */; };
+		BAAFA6001E50E48000FEBD32 /* podParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFA5FF1E50E48000FEBD32 /* podParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		BA4636A31E4FBCDD007FC263 /* HowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4636A71E4FBCDD007FC263 /* HowlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowlTests.swift; sourceTree = "<group>"; };
 		BA4636A91E4FBCDD007FC263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAFA5FF1E50E48000FEBD32 /* podParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = podParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		BA4636911E4FBCDD007FC263 /* Howl */ = {
 			isa = PBXGroup;
 			children = (
+				BAAFA5FE1E50E47700FEBD32 /* XMLParser */,
 				BA3AAC511E502DE5007C43FD /* Resources */,
 				BA3AAC521E502DE9007C43FD /* Model */,
 				BA3AAC531E502DEC007C43FD /* View */,
@@ -161,6 +164,14 @@
 				BA4636A91E4FBCDD007FC263 /* Info.plist */,
 			);
 			path = HowlTests;
+			sourceTree = "<group>";
+		};
+		BAAFA5FE1E50E47700FEBD32 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				BAAFA5FF1E50E48000FEBD32 /* podParser.swift */,
+			);
+			name = XMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAFA6001E50E48000FEBD32 /* podParser.swift in Sources */,
 				02B063DD1E5044C600A75B9A /* informationController.swift in Sources */,
 				BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */,
 				BA3AAC621E5037A8007C43FD /* ViewController2.swift in Sources */,

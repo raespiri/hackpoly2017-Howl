@@ -33,6 +33,14 @@
                                         <rect key="frame" x="88" y="141" width="217" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCA-1Y-RjA">
+                                        <rect key="frame" x="361" y="683" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="info_button" image="information.png"/>
+                                        <connections>
+                                            <segue destination="BT7-Yi-hW5" kind="presentation" id="ntV-7V-EEo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.96265703439999994" blue="0.47327744960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -73,18 +81,15 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCA-1Y-RjA">
-                                <rect key="frame" x="322" y="659" width="61" height="55"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-9e-qcy">
+                                <rect key="frame" x="193" y="611" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="info_button" image="information.png"/>
-                                <connections>
-                                    <segue destination="BT7-Yi-hW5" kind="presentation" id="ntV-7V-EEo"/>
-                                </connections>
-                            </button>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="activitySpinner" destination="b1l-9e-qcy" id="YwM-rl-fNp"/>
                         <outlet property="howlTitle" destination="Aup-GL-vty" id="oM4-DU-JWV"/>
                         <outlet property="infoButton" destination="cCA-1Y-RjA" id="YaB-0L-zPh"/>
                         <outlet property="recordButton" destination="8aX-oO-Lkg" id="bK4-3h-ayR"/>
@@ -109,14 +114,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" text="Congratulations, your text is on this side now." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-Ys-jhT">
-                                <rect key="frame" x="36" y="88" width="343" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re5-fa-9cw">
                                 <rect key="frame" x="326" y="39" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,8 +123,8 @@
                                     <action selector="dismiss:" destination="5LA-WB-2Qe" eventType="touchUpInside" id="h4l-Zg-DeX"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" text="This is a test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-N4-Axw">
-                                <rect key="frame" x="36" y="165" width="343" height="180"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" text="Invalid query. Try again?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uxm-N4-Axw">
+                                <rect key="frame" x="36" y="98" width="343" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -166,18 +163,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wolf.png" translatesAutoresizingMaskIntoConstraints="NO" id="E9s-En-fmI">
-                                        <rect key="frame" x="88" y="141" width="217" height="154"/>
+                                        <rect key="frame" x="97" y="146" width="217" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-gW-gBI">
-                                        <rect key="frame" x="173" y="592" width="68" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Done"/>
-                                        <connections>
-                                            <action selector="dismissing:" destination="BT7-Yi-hW5" eventType="touchUpInside" id="mYu-E1-uBu"/>
-                                        </connections>
-                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TJH-Il-fF5">
                                         <rect key="frame" x="87" y="630" width="240" height="118"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -187,12 +175,21 @@ Copyright © 2017 Howl. All rights reserved.</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DMO-bW-VUh">
-                                        <rect key="frame" x="71" y="450" width="273" height="134"/>
+                                        <rect key="frame" x="70" y="371" width="273" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Instructions: Press the microphone and ask your  question to the great Wolf.   ---  Howl is still in its beta phase, but one day hopes to be the Alpha.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-gW-gBI">
+                                        <rect key="frame" x="171" y="513" width="68" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="dismissing:" destination="BT7-Yi-hW5" eventType="touchUpInside" id="mYu-E1-uBu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.96265703439999994" blue="0.47327744960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -201,6 +198,9 @@ Copyright © 2017 Howl. All rights reserved.</string>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="descriptionText" destination="DMO-bW-VUh" id="kJe-cM-xjy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1A-eV-OMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

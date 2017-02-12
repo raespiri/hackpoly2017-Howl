@@ -12,6 +12,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     @IBOutlet weak var speechToTextDisplay: UITextView!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var wolfImage: UIImageView!
@@ -71,6 +72,7 @@ class ViewController: UIViewController {
         infoButton.setTitle("info_button", for: [])
         recordButton.setTitle("record_button", for: [])
         recordButton.tag = 1
+        activitySpinner.isHidden = true
     }
     
     @IBAction func recordButtonPressed(_ sender: Any) {
@@ -83,6 +85,11 @@ class ViewController: UIViewController {
             recordButton.updateConstraints()
             // Segue-way into the next screen
             if(speechToTextDisplay.text != "") {
+//                DispatchQueue.global(qos: .background).async {
+//                    print("hi")
+//                    self.activitySpinner.isHidden = false
+//                    self.activitySpinner.startAnimating()
+//                }
                 self.performSegue(withIdentifier: "stopRecording", sender: self)
             }
         } else {

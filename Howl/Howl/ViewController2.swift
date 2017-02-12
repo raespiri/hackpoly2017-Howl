@@ -16,7 +16,34 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        parsedStringDisplay.text = parsedString
+        let pod_parser = podParser(input: parsedString)
+        pod_parser.startParse()
+        for pod in pod_parser.returnPods() {
+            if pod.title == "Derivative" {
+                parsedStringDisplay.text = pod.plaintext
+                break
+            }
+            else if pod.title == "Indefinite integral" {
+                parsedStringDisplay.text = pod.plaintext
+                break
+            }
+            else if pod.title == "Definite integral" {
+                parsedStringDisplay.text = pod.plaintext
+                break
+            }
+            else if pod.title == "Exact result" {
+                parsedStringDisplay.text = pod.plaintext
+                break
+            }
+            else if pod.title == "Mixed fraction" {
+                parsedStringDisplay.text = pod.plaintext
+                break
+            }
+            else if pod.title == "Result" {
+                parsedStringDisplay.text = pod.plaintext
+                break
+            }
+        }
     }
     
     @IBAction func dismiss(_ sender: Any) {
