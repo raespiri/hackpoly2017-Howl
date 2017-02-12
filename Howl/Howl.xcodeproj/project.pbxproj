@@ -16,14 +16,6 @@
 		BA3AAC621E5037A8007C43FD /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AAC611E5037A8007C43FD /* ViewController2.swift */; };
 		BA3AAC661E505817007C43FD /* microphone_black.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC631E505817007C43FD /* microphone_black.png */; };
 		BA3AAC671E505817007C43FD /* microphone_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC641E505817007C43FD /* microphone_yellow.png */; };
-		BA3AAC891E505E92007C43FD /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC821E505E92007C43FD /* 57x57.png */; };
-		BA3AAC8A1E505E92007C43FD /* 60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC831E505E92007C43FD /* 60x60.png */; };
-		BA3AAC8B1E505E92007C43FD /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC841E505E92007C43FD /* 80x80.png */; };
-		BA3AAC8C1E505E92007C43FD /* 87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC851E505E92007C43FD /* 87x87.png */; };
-		BA3AAC8D1E505E92007C43FD /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC861E505E92007C43FD /* 120x120.png */; };
-		BA3AAC8E1E505E92007C43FD /* 180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC871E505E92007C43FD /* 180x180.png */; };
-		BA3AAC8F1E505E92007C43FD /* howl logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC881E505E92007C43FD /* howl logo.png */; };
-		BA3AAC911E505ED0007C43FD /* 40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3AAC901E505ED0007C43FD /* 40x40.png */; };
 		BA4636931E4FBCDD007FC263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636921E4FBCDD007FC263 /* AppDelegate.swift */; };
 		BA4636951E4FBCDD007FC263 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4636941E4FBCDD007FC263 /* ViewController.swift */; };
 		BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4636961E4FBCDD007FC263 /* Main.storyboard */; };
@@ -52,14 +44,6 @@
 		BA3AAC611E5037A8007C43FD /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		BA3AAC631E505817007C43FD /* microphone_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone_black.png; sourceTree = "<group>"; };
 		BA3AAC641E505817007C43FD /* microphone_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone_yellow.png; sourceTree = "<group>"; };
-		BA3AAC821E505E92007C43FD /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
-		BA3AAC831E505E92007C43FD /* 60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60x60.png; sourceTree = "<group>"; };
-		BA3AAC841E505E92007C43FD /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80.png; sourceTree = "<group>"; };
-		BA3AAC851E505E92007C43FD /* 87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87x87.png; sourceTree = "<group>"; };
-		BA3AAC861E505E92007C43FD /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120.png; sourceTree = "<group>"; };
-		BA3AAC871E505E92007C43FD /* 180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180x180.png; sourceTree = "<group>"; };
-		BA3AAC881E505E92007C43FD /* howl logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "howl logo.png"; sourceTree = "<group>"; };
-		BA3AAC901E505ED0007C43FD /* 40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40x40.png; sourceTree = "<group>"; };
 		BA46368F1E4FBCDD007FC263 /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4636921E4FBCDD007FC263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA4636941E4FBCDD007FC263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,14 +116,6 @@
 		BA3AAC691E505BA6007C43FD /* howl logo */ = {
 			isa = PBXGroup;
 			children = (
-				BA3AAC901E505ED0007C43FD /* 40x40.png */,
-				BA3AAC821E505E92007C43FD /* 57x57.png */,
-				BA3AAC831E505E92007C43FD /* 60x60.png */,
-				BA3AAC841E505E92007C43FD /* 80x80.png */,
-				BA3AAC851E505E92007C43FD /* 87x87.png */,
-				BA3AAC861E505E92007C43FD /* 120x120.png */,
-				BA3AAC871E505E92007C43FD /* 180x180.png */,
-				BA3AAC881E505E92007C43FD /* howl logo.png */,
 			);
 			name = "howl logo";
 			sourceTree = "<group>";
@@ -231,6 +207,10 @@
 		BA4636871E4FBCDD007FC263 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = jonashen;
@@ -273,19 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3AAC8B1E505E92007C43FD /* 80x80.png in Resources */,
-				BA3AAC8E1E505E92007C43FD /* 180x180.png in Resources */,
 				BA46369D1E4FBCDD007FC263 /* LaunchScreen.storyboard in Resources */,
-				BA3AAC8A1E505E92007C43FD /* 60x60.png in Resources */,
 				BA3AAC571E502E30007C43FD /* wolf.png in Resources */,
-				BA3AAC8D1E505E92007C43FD /* 120x120.png in Resources */,
 				BA3AAC5E1E5033F4007C43FD /* microphone.png in Resources */,
 				02B063E31E50462C00A75B9A /* information.png in Resources */,
-				BA3AAC891E505E92007C43FD /* 57x57.png in Resources */,
-				BA3AAC8C1E505E92007C43FD /* 87x87.png in Resources */,
-				BA3AAC911E505ED0007C43FD /* 40x40.png in Resources */,
 				BA3AAC561E502E30007C43FD /* redborder.png in Resources */,
-				BA3AAC8F1E505E92007C43FD /* howl logo.png in Resources */,
 				BA46369A1E4FBCDD007FC263 /* Assets.xcassets in Resources */,
 				BA4636981E4FBCDD007FC263 /* Main.storyboard in Resources */,
 				BA3AAC661E505817007C43FD /* microphone_black.png in Resources */,

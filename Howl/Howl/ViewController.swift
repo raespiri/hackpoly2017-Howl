@@ -11,11 +11,12 @@ import Speech
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var speechToTextDisplay: UITextView!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var wolfImage: UIImageView!
     @IBOutlet weak var howlTitle: UITextView!
+    @IBOutlet weak var infoButton: UIButton!
     
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest? // provides an audio input to speech recognizer
     private var recognitionTask: SFSpeechRecognitionTask? // gives result of the request made
@@ -65,7 +66,11 @@ class ViewController: UIViewController {
         }
         
         speechToTextDisplay.isSelectable = false
+        speechToTextDisplay.isHidden = true
         howlTitle.isEditable = false
+        infoButton.setTitle("info_button", for: [])
+        recordButton.setTitle("record_button", for: [])
+        recordButton.tag = 1
     }
     
     @IBAction func recordButtonPressed(_ sender: Any) {
@@ -73,16 +78,18 @@ class ViewController: UIViewController {
             audioEngine.stop()
             recognitionRequest?.endAudio()
             recordButton.isEnabled = false
-            recordButton.setTitle("HOWL", for: .normal)
-            // Segue-way into the next screen
-            self.performSegue(withIdentifier: "stopRecording", sender: self)
+            speechToTextDisplay.isHidden = true
             recordButton.setImage(UIImage(named: "microphone_yellow.png"), for: UIControlState.normal)
             recordButton.updateConstraints()
+            // Segue-way into the next screen
+            if(speechToTextDisplay.text != "") {
+                self.performSegue(withIdentifier: "stopRecording", sender: self)
+            }
         } else {
             startRecording()
-            recordButton.setTitle("Stop", for: .normal)
             recordButton.setImage(UIImage(named: "microphone_black.png"), for: UIControlState.normal)
             speechToTextDisplay.text = ""
+            speechToTextDisplay.isHidden = false
         }
     }
     
@@ -168,16 +175,18 @@ class ViewController: UIViewController {
             recordButton.isEnabled = false
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let DestViewController : ViewController2 = (segue.destination as? ViewController2)!
-//        DestViewController.parsedString = textField.text
-//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "stopRecording" {
+                let DestViewController : ViewController2 = (segue.destination as? ViewController2)!
+                DestViewController.parsedString = speechToTextDisplay.text
+        }
+    }
 }
 

@@ -12,8 +12,15 @@ import UIKit
 class ViewController2: UIViewController {
     
     var parsedString = ""
+    @IBOutlet weak var parsedStringDisplay: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        parsedStringDisplay.text = parsedString
     }
+    
+    @IBAction func dismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
